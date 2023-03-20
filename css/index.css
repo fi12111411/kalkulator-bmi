@@ -1,0 +1,75 @@
+/* style untuk tag di bawah*/
+body {
+font-family: Arial, sans-serif;
+}
+div{
+    /* aktifkan style di bawah untuk mempermudah melihat template */
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+input[type="radio"]{
+    cursor: pointer;
+}
+
+/* style untuk yang mempunyai class di bawah */
+.tombol{
+    width: 25%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: #eee;
+    color: #333;			
+}
+.tombol:hover{
+    background-color: dimgray;
+    color: #eee;
+}
+.text{
+    padding: 0px 10%;
+}
+.form{
+    text-align: center;
+    background-color: #ccc;
+    color: #333;
+    width: 70%;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+.form:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.input-fill{
+    width: 80%;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* style untuk yang mempunyai id di bawah */
+#bilangan-bmi{
+    font-size: 32px;
+    margin: 0px auto;
+}
+#top-page{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #333;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+#top-page:hover{
+    background-color: #666;
+}
