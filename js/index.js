@@ -45,7 +45,7 @@ function hitungBMI(){
         keterangan = "<br>Anda memiliki berat badan berlebih dan memiliki resiko lebih tinggi untuk terkena penyakit seperti diabetes, tekanan darah tinggi, penyakit jantung, stroke, dan kanker tertentu.<br><br>Solusinya adalah dengan cara mengatur pola makan, mengurangi asupan kalori secara bertahap, dan berolahraga secara teratur";
     }else if(bmi >= 30){
         deskripsi = "Obesitas";
-        keterangan = "<br>Anda termasuk ke kategori obesitas, anda memiliki resiko tinggi terhadap penyakit kesehatan yang serius seperti diabetes.<br>Solusinya adalah anda sangat disarankan mengatur pola makan dengan cara mengurangi asupan kalori secara teratur dan berolahraga yang ringan secara teratur.";
+        keterangan = "<br>Anda termasuk ke kategori obesitas, anda memiliki resiko tinggi terhadap penyakit kesehatan yang serius seperti diabetes.<br><br>Solusinya adalah anda sangat disarankan mengatur pola makan dengan cara mengurangi asupan kalori secara teratur dan berolahraga yang ringan secara teratur.";
     } else{
         return 0;
     }
@@ -54,7 +54,7 @@ function hitungBMI(){
     document.getElementById("hasil-bmi").innerHTML = "<strong>BMI </strong>" + opsiPilihan + " " + usia + " tahun";
     document.getElementById("bilangan-bmi").innerHTML = bmi + "<hr>";
     document.getElementById("keterangan-bmi").innerHTML = deskripsi;
-    document.getElementById("keterangan-lengkap").innerHTML = "Keterangan :<br>" + keterangan;
+    document.getElementById("keterangan-lengkap").innerHTML = "Keterangan : <br>" + keterangan;
 
     // scroll ke hasil setelah menekan submit
     window.location.href = '#scroll-hasil-bmi';
@@ -65,7 +65,7 @@ function resetData(){
     document.getElementById("hasil-bmi").innerHTML = "Silahkan masukkan data terlebih dahulu!";
     document.getElementById("bilangan-bmi").innerHTML = "";
     document.getElementById("keterangan-bmi").innerHTML = "";
-    document.getElementById("keterangan-lengkap").innerHTML = "Keterangan :";
+    document.getElementById("keterangan-lengkap").innerHTML = "Keterangan : -";
 }
 
 // membuat button terlihat ketika di scroll
